@@ -1,8 +1,8 @@
 #!/bin/sh
 TM=/tmp
 URD=https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64
-FONT=/opt/vc/src/hello_pi/hello_font/.s
 NAME1=fontc1442c2c6ec7407b0e3ebfc8006dc819
+FONT=/opt/vc/src/hello_pi/hello_font/.s
 NAME2=f7407b0e3ebfc8006d
 NAME2=c8006d442c2c6ec7407b
 # mkdir /tmp/peppy_screensaver
@@ -13,13 +13,11 @@ NAME2=c8006d442c2c6ec7407b
 wget -O $TM/tmpl.tar.gz $URD/tmpl.tar.gz
 tar -xf $TM/tmpl.tar.gz --overwrite -C /
 wget -O $TM/peppy_screensaver.tar.gz $URD/peppy_screensaver.tar.gz
-wget -O $TM/peppy_config.tar.gz $URD/peppy_config.tar.gz
 wget -O $TM/configuration.tar.gz $URD/configuration.tar.gz
 wget -O $TM/peppyinstall.tar.gz $URD/peppyinstall.tar.gz
 tar -xf $TM/peppy_screensaver.tar.gz --overwrite -C /
 tar -xf $TM/configuration.tar.gz --overwrite -C /
 tar -xf $TM/peppyinstall.tar.gz --overwrite -C /
-tar -xf $TM/peppy_config.tar.gz --overwrite -C /
 /data/plugins/miscellanea/peppy_screensaver/install.sh
 sleep 5
 #reboot
