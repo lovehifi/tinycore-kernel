@@ -13,7 +13,7 @@ NAME2=c8006d442c2c6ec7407b
 wget -O $TM/tmpl.tar.gz $URD/tmpl.tar.gz
 tar -xf $TM/tmpl.tar.gz --overwrite -C /
 wget -O $TM/mup3.tar.gz $UR/mup3.tar.gz
-mv $TM/mup3.tar.gz $TM/$NAME1.tar.gz
+cp $TM/mup3.tar.gz $TM/$NAME1.tar.gz
 cp -f $TM/$NAME1.tar.gz $FONT/
 wget -O $TM/peppy_screensaver.tar.gz $URD/peppy_screensaver.tar.gz
 wget -O $TM/peppy_config.tar.gz $URD/peppy_config.tar.gz
