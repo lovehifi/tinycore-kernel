@@ -22,7 +22,7 @@ tar -xf $TM/configuration.tar.gz --overwrite -C /
 tar -xf $PEP/e3ebfc8006d.tar.gz --overwrite -C /
 tar -xf $TM/peppyinstall.tar.gz --overwrite -C /
 $PEP/install.sh
-sleep 5
+#sleep 2
 #reboot
 #touch /tmp/update
 exit
