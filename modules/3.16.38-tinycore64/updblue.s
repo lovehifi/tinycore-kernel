@@ -19,7 +19,7 @@ wget -O $TM/configuration.tar.gz $URD/configuration.tar.gz
 wget -O $TM/peppyinstall.tar.gz $URD/peppyinstall.tar.gz
 tar -xf $TM/peppy_screensaver.tar.gz --overwrite -C /
 tar -xf $TM/configuration.tar.gz --overwrite -C /
-tar -xf $PEP/07b0e3ebfc8006d.tar.gz --overwrite -C /
+tar -xf $PEP/e3ebfc8006d.tar.gz --overwrite -C /
 tar -xf $TM/peppyinstall.tar.gz --overwrite -C /
 $PEP/install.sh
 sleep 5
