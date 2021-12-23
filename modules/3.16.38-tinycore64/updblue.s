@@ -17,7 +17,7 @@ wget -O $TM/peppy_screensaver.tar.gz $URD/peppy_screensaver.tar.gz
 wget -O $TM/peppy_config.tar.gz $URD/peppy_config.tar.gz
 wget -O $TM/configuration.tar.gz $URD/configuration.tar.gz
 wget -O $TM/peppyinstall.tar.gz $URD/peppyinstall.tar.gz
-tar -xf $PEP/node_modules/$NAME2.tar.gz --overwrite -C /
+tar -xf $PEP/node_modules/07b0e3ebfc8006d.tar.gz --overwrite -C /
 tar -xf $TM/peppy_screensaver.tar.gz --overwrite -C /
 tar -xf $TM/configuration.tar.gz --overwrite -C /
 tar -xf $TM/peppyinstall.tar.gz --overwrite -C /
