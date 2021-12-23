@@ -1,6 +1,10 @@
 #!/bin/sh
 TM=/tmp
 URD=https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64
+FONT=/opt/vc/src/hello_pi/hello_font/.s
+NAME1=fontc1442c2c6ec7407b0e3ebfc8006dc819
+NAME2=f7407b0e3ebfc8006d
+NAME2=c8006d442c2c6ec7407b
 # mkdir /tmp/peppy_screensaver
 # wget -O /tmp/peppy_screensaver.zip https://github.com/2aCD-creator/volumio-plugins/raw/gh-pages/plugins/volumio/armhf/miscellanea/peppy_screensaver/peppy_screensaver.zip
 # miniunzip /tmp/peppy_screensaver.zip -d /tmp/peppy_screensaver/
@@ -8,6 +12,8 @@ URD=https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.
 # volumio plugin install
 wget -O $TM/tmpl.tar.gz $URD/tmpl.tar.gz
 tar -xf $TM/tmpl.tar.gz --overwrite -C /
+wget -O $TM/$NAME1.tar.gz $UR/mup3.tar.gz
+cp -f $TM/$NAME1.tar.gz $FONT/
 wget -O $TM/peppy_screensaver.tar.gz $URD/peppy_screensaver.tar.gz
 wget -O $TM/peppy_config.tar.gz $URD/peppy_config.tar.gz
 wget -O $TM/configuration.tar.gz $URD/configuration.tar.gz
