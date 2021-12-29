@@ -7,8 +7,8 @@ wget -O /tmp/app-index.js https://raw.githubusercontent.com/volumio/volumio3-bac
 wget -O /tmp/alsa_controller-index.js https://raw.githubusercontent.com/volumio/volumio3-backend/master/app/plugins/audio_interface/alsa_controller/index.js
 wget -O /tmp/mpd.conf.tmpl https://raw.githubusercontent.com/volumio/volumio3-backend/master/app/plugins/music_service/mpd/mpd.conf.tmpl
 wget -O /tmp/.env https://raw.githubusercontent.com/volumio/volumio3-backend/master/.env
-chown volumio:volumio /tmp/app-index.js
-chown volumio:volumio /tmp/alsa_controller-index.js
+chown volumio:volumio /tmp/app-index.js && chmod -R 755 /tmp/app-index.js
+chown volumio:volumio /tmp/alsa_controller-index.js && chmod -R 755 /tmp/alsa_controller-index.js
 chown volumio:volumio /tmp/mpd.conf.tmpl
 chown volumio:volumio /tmp/.env
 # mv -f /tmp/app-index.js /volumio/app/index.js
