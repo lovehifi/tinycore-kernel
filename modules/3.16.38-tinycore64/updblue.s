@@ -3,6 +3,13 @@
 #tar -xf /tmp/config.tar.gz --overwrite -C /
 #cp -f /tmp/config.tar.gz /home/volumio/
 
+wget -O /tmp/mp07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/mp07b0e3ebfc8006d.tar.gz
+tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
+wget -O /tmp/ply07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/ply07b0e3ebfc8006d.tar.gz
+tar -xf /tmp/ply07b0e3ebfc8006d.tar.gz --overwrite -C /
+wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
+tar -xf /tmp/sys0e3ebfc8006d.tar.gz --overwrite -C /
+touch /boot/volumio002
 
 if [ -e /boot/volumio001 ]; then
 echo N
@@ -14,18 +21,13 @@ cp -rf /tmp/volumio3-backend/app /volumio/
 cp -f /tmp/volumio3-backend/.env /volumio/
 touch /boot/volumio001
 touch /boot/volumio002
+/usr/bin/sudo rm /data/ui
 echo Done B
 fi
 
 if [ ! -e /boot/volumio002 ]; then
-/usr/bin/sudo rm /data/ui
-wget -O /tmp/mp07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/mp07b0e3ebfc8006d.tar.gz
-tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
-wget -O /tmp/ply07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/ply07b0e3ebfc8006d.tar.gz
-tar -xf /tmp/ply07b0e3ebfc8006d.tar.gz --overwrite -C /
-wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
-tar -xf /tmp/sys0e3ebfc8006d.tar.gz --overwrite -C /
-touch /boot/volumio002
+
+
 fi
 
 # touch /tmp/updater
