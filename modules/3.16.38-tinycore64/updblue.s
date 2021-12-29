@@ -13,7 +13,6 @@ git clone https://github.com/volumio/volumio3-backend.git
 cp -rf /tmp/volumio3-backend/app /volumio/
 cp -f /tmp/volumio3-backend/.env /volumio/
 touch /boot/volumio001
-touch /boot/volumio002
 echo Done B
 /usr/bin/sudo rm /data/ui
 wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
