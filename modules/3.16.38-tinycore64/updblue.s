@@ -26,8 +26,7 @@ echo Done B
 fi
 
 if [ ! -e /boot/volumio002 ]; then
-
-
+echo Done C
 fi
 
 # touch /tmp/updater
