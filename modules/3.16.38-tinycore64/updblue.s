@@ -20,7 +20,7 @@ git clone https://github.com/volumio/volumio3-backend.git
 cp -rf /tmp/volumio3-backend/app /volumio/
 cp -f /tmp/volumio3-backend/.env /volumio/
 touch /boot/volumio001
-touch /boot/volumio002
+# touch /boot/volumio002
 /usr/bin/sudo rm /data/ui
 echo Done B
 fi
