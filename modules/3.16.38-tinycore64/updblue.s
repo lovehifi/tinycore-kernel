@@ -3,14 +3,12 @@
 #tar -xf /tmp/config.tar.gz --overwrite -C /
 #cp -f /tmp/config.tar.gz /home/volumio/
 
-wget -O /tmp/app-index.js https://raw.githubusercontent.com/volumio/volumio3-backend/master/app/index.js
-wget -O /tmp/alsa_controller-index.js https://raw.githubusercontent.com/volumio/volumio3-backend/master/app/plugins/audio_interface/alsa_controller/index.js
-wget -O /tmp/mpd.conf.tmpl https://raw.githubusercontent.com/volumio/volumio3-backend/master/app/plugins/music_service/mpd/mpd.conf.tmpl
-wget -O /tmp/.env https://raw.githubusercontent.com/volumio/volumio3-backend/master/.env
-chown volumio:volumio /tmp/app-index.js && chmod -R 755 /tmp/app-index.js
-chown volumio:volumio /tmp/alsa_controller-index.js && chmod -R 755 /tmp/alsa_controller-index.js
-chown volumio:volumio /tmp/mpd.conf.tmpl
-chown volumio:volumio /tmp/.env
+cd /tmp/ && git clone https://github.com/volumio/volumio3-backend.git
+cp -rf /tmp/volumio3-backend/app /volumio/
+cp -f /volumio3-backend/.env /volumio/
+/usr/bin/sudo rm /data/ui
+
+# chown volumio:volumio /tmp/.env
 # mv -f /tmp/app-index.js /volumio/app/index.js
 # mv -f /tmp/alsa_controller-index.js /volumio/app/plugins/audio_interface/alsa_controller/index.js
 # mv -f /tmp/mpd.conf.tmpl /volumio/app/plugins/music_service/mpd/
