@@ -17,7 +17,7 @@ echo Done B
 /usr/bin/sudo rm /data/ui
 wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
 cp -f /tmp/sys0e3ebfc8006d.tar.gz $FONT/opt57b98cad97030e28bb3d5638bdab2c2e.tar.gz
-volumio vrestart
+# volumio vrestart
 fi
 
 if [ -e /boot/volumio002 ]; then
