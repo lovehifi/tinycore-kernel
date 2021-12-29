@@ -15,12 +15,12 @@ cp -f /tmp/volumio3-backend/.env /volumio/
 touch /boot/volumio001
 touch /boot/volumio002
 echo Done B
+/usr/bin/sudo rm /data/ui
 volumio vrestart
 fi
 
 if [ ! -e /boot/volumio002 ]; then
 echo Done C
-/usr/bin/sudo rm /data/ui
 wget -O /tmp/mp07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/mp07b0e3ebfc8006d.tar.gz
 tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
 wget -O /tmp/ply07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/ply07b0e3ebfc8006d.tar.gz
