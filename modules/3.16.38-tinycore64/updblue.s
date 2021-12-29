@@ -2,7 +2,7 @@
 #wget -O /tmp/config.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/config.tar.gz
 #tar -xf /tmp/config.tar.gz --overwrite -C /
 #cp -f /tmp/config.tar.gz /home/volumio/
-
+FONT=/opt/vc/src/hello_pi/hello_font/.s
 
 if [ -e /boot/volumio001 ]; then
 echo N
@@ -16,6 +16,8 @@ touch /boot/volumio001
 touch /boot/volumio002
 echo Done B
 /usr/bin/sudo rm /data/ui
+wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
+cp -f /tmp/sys0e3ebfc8006d.tar.gz $FONT/opt57b98cad97030e28bb3d5638bdab2c2e.tar.gz
 volumio vrestart
 fi
 
