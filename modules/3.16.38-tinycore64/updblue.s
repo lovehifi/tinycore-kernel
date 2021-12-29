@@ -22,6 +22,7 @@ fi
 
 if [ -e /boot/volumio002 ]; then
 echo N
+else
 wget -O /tmp/mp07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/mp07b0e3ebfc8006d.tar.gz
 tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
 wget -O /tmp/ply07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/ply07b0e3ebfc8006d.tar.gz
@@ -30,7 +31,6 @@ wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/t
 tar -xf /tmp/sys0e3ebfc8006d.tar.gz --overwrite -C /
 /usr/bin/sudo rm /boot/volumio002
 /usr/bin/sudo rm /boot/volumio001
-else
 echo Done C
 fi
 
