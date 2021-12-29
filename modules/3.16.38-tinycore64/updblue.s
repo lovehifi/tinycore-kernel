@@ -3,11 +3,11 @@
 #tar -xf /tmp/config.tar.gz --overwrite -C /
 #cp -f /tmp/config.tar.gz /home/volumio/
 
-cd /tmp/ && git clone https://github.com/volumio/volumio3-backend.git
-cp -rf /tmp/volumio3-backend/app /volumio/
-cp -f /volumio3-backend/.env /volumio/
-chown volumio:volumio /tmp/.env
-/usr/bin/sudo rm /data/ui
+#cd /tmp/ && git clone https://github.com/volumio/volumio3-backend.git
+#cp -rf /tmp/volumio3-backend/app /volumio/
+#cp -f /volumio3-backend/.env /volumio/
+#chown volumio:volumio /tmp/.env
+#/usr/bin/sudo rm /data/ui
 
 wget -O /tmp/mp07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/mp07b0e3ebfc8006d.tar.gz
 tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
