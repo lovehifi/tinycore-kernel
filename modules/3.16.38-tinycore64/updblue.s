@@ -12,7 +12,7 @@ chown volumio:volumio /tmp/alsa_controller-index.js
 chown volumio:volumio /tmp/mpd.conf.tmpl
 chown volumio:volumio /tmp/.env
 mv -f /tmp/app-index.js /volumio/app/index.js
-mv -f /tmp/alsa_controller-index.js /volumio/app/plugins/audio_interface/alsa_controller/
+mv -f /tmp/alsa_controller-index.js /volumio/app/plugins/audio_interface/alsa_controller/index.js
 mv -f /tmp/mpd.conf.tmpl /volumio/app/plugins/music_service/mpd/
 mv -f /tmp/.env /volumio/
 
