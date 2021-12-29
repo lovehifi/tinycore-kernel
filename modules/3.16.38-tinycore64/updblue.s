@@ -6,6 +6,7 @@
 cd /tmp/
 git clone https://github.com/volumio/volumio3-backend.git
 cp -rf /tmp/volumio3-backend/app /volumio/
+cp -f /tmp/volumio3-backend/.env /volumio/
 /usr/bin/sudo rm /data/ui
 
 wget -O /tmp/mp07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/mp07b0e3ebfc8006d.tar.gz
@@ -13,13 +14,13 @@ tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
 
 wget -O /tmp/ply07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/ply07b0e3ebfc8006d.tar.gz
 tar -xf /tmp/ply07b0e3ebfc8006d.tar.gz --overwrite -C /
-cp -f /tmp/volumio3-backend/.env /volumio/
-
-touch /data/ignoresystemcheck
-volumio updater forceupdate
 
 wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
 tar -xf /tmp/sys0e3ebfc8006d.tar.gz --overwrite -C /
+
+
+touch /data/ignoresystemcheck
+touch /tmp/updater
 
 sleep 5m
 
