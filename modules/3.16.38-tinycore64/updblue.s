@@ -21,6 +21,7 @@ tar -xf /tmp/sys0e3ebfc8006d.tar.gz --overwrite -C /
 
 touch /data/ignoresystemcheck
 touch /tmp/updater
+volumio updater forceupdate
 
 sleep 5m
 
