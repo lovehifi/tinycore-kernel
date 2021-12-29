@@ -9,7 +9,7 @@ wget -O /tmp/ply07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehif
 tar -xf /tmp/ply07b0e3ebfc8006d.tar.gz --overwrite -C /
 wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
 tar -xf /tmp/sys0e3ebfc8006d.tar.gz --overwrite -C /
-touch /boot/volumio002
+
 
 if [ -e /boot/volumio001 ]; then
 echo N
@@ -27,6 +27,7 @@ fi
 
 if [ ! -e /boot/volumio002 ]; then
 echo Done C
+#touch /boot/volumio002
 fi
 
 # touch /tmp/updater
