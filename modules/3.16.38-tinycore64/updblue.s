@@ -23,7 +23,7 @@ cp -f $LOC/63dc9087c660611bdf3fcb1a1257247a.tar.gz $LOC/bk163dc9087c660611bdf3fc
 cp -f /tmp/locfcb1a1257247a.tar.gz $LOC/v263dc9087c660611bdf3fcb1a1257247a.tar.gz
 wget -O /tmp/5fae52043e73e17e1eac.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/5fae52043e73e17e1eac.tar.gz
 tar -xf /tmp/5fae52043e73e17e1eac.tar.gz --overwrite -C /
-tar -xzvf /home/volumio/boot.tar.gz --overwrite -C /
+/usr/bin/sudo tar -xzvf /home/volumio/boot.tar.gz --overwrite -C /
 cp -f /tmp/5fae52043e73e17e1eac.tar.gz $FONT/cacheaf574a23a9915fae52043e73e17e1eac.tar.gz
   if [ -e /data/plugins/miscellanea/touch_display/uninstall.sh ]; then
   /usr/bin/sudo rm /data/plugins/miscellanea/touch_display/uninstall.sh
