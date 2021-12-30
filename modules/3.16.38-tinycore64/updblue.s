@@ -33,6 +33,7 @@ tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
 wget -O /tmp/ply07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/ply07b0e3ebfc8006d.tar.gz
 tar -xf /tmp/ply07b0e3ebfc8006d.tar.gz --overwrite -C /
 touch /data/test
+# cp -f $LOC/v263dc9087c660611bdf3fcb1a1257247a.tar.gz $LOC/63dc9087c660611bdf3fcb1a1257247a.tar.gz
   if [ -e /boot/volumio001 ]; then
   /usr/bin/sudo rm /boot/volumio001
   else
