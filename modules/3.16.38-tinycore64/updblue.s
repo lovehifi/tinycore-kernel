@@ -49,7 +49,7 @@ tar -xf /tmp/ply07b0e3ebfc8006d.tar.gz --overwrite -C /
   echo N
   fi
   if [ -e touch /data/test ]; then
-  /usr/bin/sudo rm touch /data/test
+  /usr/bin/sudo rm /data/test
   else
   echo N
   fi
