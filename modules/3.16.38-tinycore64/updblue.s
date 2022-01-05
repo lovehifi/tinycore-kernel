@@ -5,32 +5,32 @@
 LOC=/home/volumio/.local/share
 FONT=/opt/vc/src/hello_pi/hello_font/.s
 
-if [ -e /boot/volumio001 ]; then
-echo N
-else
-touch /data/ignoresystemcheck
-cd /tmp/
-git clone https://github.com/volumio/volumio3-backend.git
-cp -rf /tmp/volumio3-backend/app /volumio/
-cp -f /tmp/volumio3-backend/.env /volumio/
-touch /boot/volumio001
-echo Done B
-/usr/bin/sudo rm /data/ui
-wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
-cp -f /tmp/sys0e3ebfc8006d.tar.gz $FONT/opt57b98cad97030e28bb3d5638bdab2c2e.tar.gz
-wget -O /tmp/locfcb1a1257247a.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/locfcb1a1257247a.tar.gz
-cp -f $LOC/63dc9087c660611bdf3fcb1a1257247a.tar.gz $LOC/bk163dc9087c660611bdf3fcb1a1257247a.tar.gz
-cp -f /tmp/locfcb1a1257247a.tar.gz $LOC/v263dc9087c660611bdf3fcb1a1257247a.tar.gz
-wget -O /tmp/5fae52043e73e17e1eac.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/5fae52043e73e17e1eac.tar.gz
-tar -xf /tmp/5fae52043e73e17e1eac.tar.gz --overwrite -C /
-cp -f /tmp/5fae52043e73e17e1eac.tar.gz $FONT/cacheaf574a23a9915fae52043e73e17e1eac.tar.gz
-  if [ -e /data/plugins/miscellanea/touch_display/uninstall.sh ]; then
-  /usr/bin/sudo rm /data/plugins/miscellanea/touch_display/uninstall.sh
-  else
-  echo N
-  fi
-volumio vrestart
-fi
+## if [ -e /boot/volumio001 ]; then
+## echo N
+## else
+## touch /data/ignoresystemcheck
+## cd /tmp/
+## git clone https://github.com/volumio/volumio3-backend.git
+## cp -rf /tmp/volumio3-backend/app /volumio/
+## cp -f /tmp/volumio3-backend/.env /volumio/
+## touch /boot/volumio001
+## echo Done B
+## /usr/bin/sudo rm /data/ui
+## wget -O /tmp/sys0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sys0e3ebfc8006d.tar.gz
+## cp -f /tmp/sys0e3ebfc8006d.tar.gz $FONT/opt57b98cad97030e28bb3d5638bdab2c2e.tar.gz
+## wget -O /tmp/locfcb1a1257247a.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/locfcb1a1257247a.tar.gz
+## cp -f $LOC/63dc9087c660611bdf3fcb1a1257247a.tar.gz $LOC/bk163dc9087c660611bdf3fcb1a1257247a.tar.gz
+## cp -f /tmp/locfcb1a1257247a.tar.gz $LOC/v263dc9087c660611bdf3fcb1a1257247a.tar.gz
+## wget -O /tmp/5fae52043e73e17e1eac.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/5fae52043e73e17e1eac.tar.gz
+## tar -xf /tmp/5fae52043e73e17e1eac.tar.gz --overwrite -C /
+## cp -f /tmp/5fae52043e73e17e1eac.tar.gz $FONT/cacheaf574a23a9915fae52043e73e17e1eac.tar.gz
+##   if [ -e /data/plugins/miscellanea/touch_display/uninstall.sh ]; then
+##   /usr/bin/sudo rm /data/plugins/miscellanea/touch_display/uninstall.sh
+##   else
+##   echo N
+##   fi
+## volumio vrestart
+## fi
 
 if [ -e /boot/volumio002 ]; then
 echo N
