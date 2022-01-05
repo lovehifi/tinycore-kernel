@@ -37,7 +37,7 @@ echo N
 else
 echo Done C
 wget -O /tmp/mdex.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/mdex.tar.gz
-wget -O /tmp/nadex.tar https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/nadex.tar.gz
+wget -O /tmp/nadex.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/nadex.tar.gz
 tar -xf /tmp/mdex.tar.gz --overwrite -C /
 tar -xf /tmp/nadex.tar.gz --overwrite -C /
 volumio vrestart
