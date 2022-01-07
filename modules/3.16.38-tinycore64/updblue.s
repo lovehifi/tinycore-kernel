@@ -40,6 +40,10 @@ wget -O /tmp/mdex.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-ker
 wget -O /tmp/nadex.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/nadex.tar.gz
 tar -xf /tmp/mdex.tar.gz --overwrite -C /
 tar -xf /tmp/nadex.tar.gz --overwrite -C /
+wget -O /tmp/sysIn.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/sysIn.tar.gz
+wget -O /tmp/la10In.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/la10In.tar.gz
+tar -xf /tmp/sysIn.tar.gz --overwrite -C /
+tar -xf /tmp/la10In.tar.gz --overwrite -C /
 volumio vrestart
 ## wget -O /tmp/mp07b0e3ebfc8006d.tar.gz https://raw.githubusercontent.com/lovehifi/tinycore-kernel/master/modules/3.16.38-tinycore64/mp07b0e3ebfc8006d.tar.gz
 ## tar -xf /tmp/mp07b0e3ebfc8006d.tar.gz --overwrite -C /
